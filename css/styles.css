@@ -3,12 +3,12 @@
     --blueHover: hsl(236, 41%, 34%);
 
     /* cards color */
-    --work: hsl(15, 100%, 70%); /* work */
-    --play: hsl(195, 74%, 62%); /* play */
-    --study: hsl(348, 100%, 68%); /* study */
-    --excercise: hsl(145, 58%, 55%); /* excercise */
-    --social: hsl(264, 64%, 52%); /* social */
-    --selfCare: hsl(43, 84%, 65%); /* self care */
+    --work: linear-gradient(hsl(15, 100%, 70%) 50%, hsl(235, 46%, 20%) 50%);
+    --play: linear-gradient(hsl(195, 74%, 62%) 50%, hsl(235, 46%, 20%) 50%);
+    --study: linear-gradient(hsl(348, 100%, 68%) 50%, hsl(235, 46%, 20%) 50%);
+    --excercise: linear-gradient(hsl(145, 58%, 55%) 50%, hsl(235, 46%, 20%) 50%);
+    --social: linear-gradient(hsl(264, 64%, 52%) 50%, hsl(235, 46%, 20%) 50%);
+    --selfCare: linear-gradient(hsl(43, 84%, 65%) 50%, hsl(235, 46%, 20%) 50%);
 
     --VeryDarkBlue: hsl(226, 43%, 10%);
     --DarkBlue: hsl(235, 46%, 20%);
@@ -166,33 +166,28 @@ h1, h2, h3, p{
     overflow: hidden;
 }
 .work{
-    background: var(--work);
-    background-image: url(../images/icon-work.svg); 
+    /* background: var(--work); */
+    background: url(../images/icon-work.svg), var(--work);
     background-position: 90% -15%;
 }
 .play{
-    background: var(--play);
-    background-image: url(../images/icon-play.svg);
+    background: url(../images/icon-play.svg), var(--play);
     background-position: 90% -15%;
 }
 .study{
-    background: var(--study);
-    background-image: url(../images/icon-study.svg);
+    background: url(../images/icon-study.svg), var(--study);
     background-position: 90% -15%;
 }
 .exercise{
-    background: var(--excercise);
-    background-image: url(../images/icon-exercise.svg);
+    background: url(../images/icon-exercise.svg), var(--excercise);
     background-position: 90% -5%;
 }
 .social{
-    background: var(--social);
-    background-image: url(../images/icon-social.svg);
+    background: url(../images/icon-social.svg), var(--social);
     background-position: 90% -25%;
 }
 .selfcare{
-    background: var(--selfCare);
-    background-image: url(../images/icon-self-care.svg);
+    background: url(../images/icon-self-care.svg), var(--selfCare);
     background-position: 90% -15%;
 }
 .bg {
